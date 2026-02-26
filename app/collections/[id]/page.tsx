@@ -71,14 +71,10 @@ function ProductCard({ product }: { product: (typeof products)[0] }) {
         <p className="text-6xl">{product.image}</p>
       </div>
 
-      {/* Gallery Images */}
       {product.galleryImages && product.galleryImages.length > 0 && (
         <div className="flex gap-2 p-3 bg-muted">
           {product.galleryImages.slice(0, 2).map((img, idx) => (
-            <div
-              key={idx}
-              className="flex-1 aspect-square bg-gradient-to-br from-muted-foreground to-background flex items-center justify-center text-muted text-2xl rounded"
-            >
+            <div key={idx} className="flex-1 aspect-square bg-gradient-to-br from-muted-foreground to-background flex items-center justify-center text-muted text-2xl rounded">
               {img}
             </div>
           ))}
