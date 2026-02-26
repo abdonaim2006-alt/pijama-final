@@ -119,12 +119,7 @@ function ProductCard({ product }: { product: (typeof products)[0] }) {
         </div>
 
         {/* Buttons */}
-        <div className="space-y-2 pt-3 border-t border-border">
-          <Link href={`/product/${product.id}`} className="block">
-            <Button variant="outline" className="w-full">
-              Voir détails
-            </Button>
-          </Link>
+        <div className="pt-3 border-t border-border">
           <Button
             onClick={() => setShowForm(!showForm)}
             className="w-full cta-primary"
