@@ -12,25 +12,16 @@ const nextConfig = {
   compress: true,
   productionBrowserSourceMaps: false,
   experimental: {
-    turbopack: {
-      resolveAlias: {
-        'framer-motion': false,
-      },
-      cacheDir: '.turbo-cache-invalidated',
-    },
     optimizeCss: true,
     optimizePackageImports: ['lucide-react', '@radix-ui/react-icons'],
   },
   onDemandEntries: {
-    maxInactiveAge: 200,
-    pagesBufferLength: 1,
+    maxInactiveAge: 60000,
+    pagesBufferLength: 5,
   },
-  cacheMaxMemorySize: 0,
   staticPageGenerationTimeout: 120,
-  swcMinify: true,
   reactStrictMode: true,
   poweredByHeader: false,
-  generateEtags: true,
   pageExtensions: ['tsx', 'ts', 'jsx', 'js'],
 }
 
