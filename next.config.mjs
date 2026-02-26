@@ -16,7 +16,7 @@ const nextConfig = {
       resolveAlias: {
         'framer-motion': false,
       },
-      cacheDir: '.turbo-cache-invalidated',
+      cacheDir: '.turbo-cache-v2',
     },
     optimizeCss: true,
     optimizePackageImports: ['lucide-react', '@radix-ui/react-icons'],
