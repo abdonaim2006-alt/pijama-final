@@ -4,6 +4,7 @@ export interface Product {
   price: number
   salePrice?: number
   image: string
+  galleryImages?: string[]
   collection: 'été' | 'hiver' | 'premium' | 'confort'
   colors: string[]
   sizes: string[]
@@ -16,13 +17,13 @@ export interface Product {
 }
 
 export const products: Product[] = [
-  // Collection Été - 2 produits
   {
     id: '1',
     name: 'Pyjama Été Léger',
     price: 89.99,
     salePrice: 69.99,
     image: 'summer-light',
+    galleryImages: ['summer-light-2', 'summer-light-3'],
     collection: 'été',
     colors: ['Rose', 'Jaune'],
     sizes: ['S', 'M', 'L', 'XL'],
@@ -38,6 +39,7 @@ export const products: Product[] = [
     name: 'Pyjama Lin Respirant',
     price: 139.99,
     image: 'linen-breeze',
+    galleryImages: ['linen-breeze-2', 'linen-breeze-3'],
     collection: 'été',
     colors: ['Rose', 'Jaune'],
     sizes: ['XS', 'S', 'M', 'L', 'XL'],
@@ -54,6 +56,7 @@ export const products: Product[] = [
     name: 'Pyjama Hiver Douillet',
     price: 159.99,
     image: 'winter-cozy',
+    galleryImages: ['winter-cozy-2', 'winter-cozy-3'],
     collection: 'hiver',
     colors: ['Rose', 'Jaune'],
     sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
@@ -68,6 +71,7 @@ export const products: Product[] = [
     name: 'Pyjama Hiver Cachemire',
     price: 249.99,
     image: 'cashmere-winter',
+    galleryImages: ['cashmere-winter-2', 'cashmere-winter-3'],
     collection: 'hiver',
     colors: ['Rose', 'Jaune'],
     sizes: ['XS', 'S', 'M', 'L', 'XL'],
@@ -84,6 +88,7 @@ export const products: Product[] = [
     name: 'Pyjama Soie Pure Luxe',
     price: 199.99,
     image: 'silk-luxury',
+    galleryImages: ['silk-luxury-2', 'silk-luxury-3'],
     collection: 'premium',
     colors: ['Rose', 'Jaune'],
     sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
@@ -99,6 +104,7 @@ export const products: Product[] = [
     name: 'Pyjama Coton Égyptien Premium',
     price: 149.99,
     image: 'cotton-premium',
+    galleryImages: ['cotton-premium-2', 'cotton-premium-3'],
     collection: 'premium',
     colors: ['Rose', 'Jaune'],
     sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
@@ -116,6 +122,7 @@ export const products: Product[] = [
     name: 'Pyjama Bambou Écologique',
     price: 129.99,
     image: 'bamboo-eco',
+    galleryImages: ['bamboo-eco-2', 'bamboo-eco-3'],
     collection: 'confort',
     colors: ['Rose', 'Jaune'],
     sizes: ['XS', 'S', 'M', 'L', 'XL'],
@@ -131,6 +138,7 @@ export const products: Product[] = [
     name: 'Pyjama Microfibre Douce',
     price: 99.99,
     image: 'microfiber-soft',
+    galleryImages: ['microfiber-soft-2', 'microfiber-soft-3'],
     collection: 'confort',
     colors: ['Rose', 'Jaune'],
     sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
