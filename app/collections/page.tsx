@@ -29,7 +29,7 @@ export default function ProductsPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
               {products.map((product) => (
-                <Link key={product.id} href={`/product/${product.id}`}>
+                <Link key={product.id} href={`/collections/${product.id}`}>
                   <div className="group bg-card rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 h-full flex flex-col border border-border cursor-pointer">
                     {/* Image Container */}
                     <div className="relative aspect-square bg-gradient-to-br from-muted to-muted/60 overflow-hidden">
