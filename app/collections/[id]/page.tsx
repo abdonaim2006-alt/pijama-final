@@ -71,6 +71,7 @@ function ProductCard({ product }: { product: (typeof products)[0] }) {
         <p className="text-6xl">{product.image}</p>
       </div>
 
+      {/* Gallery Images */}
       {product.galleryImages && product.galleryImages.length > 0 && (
         <div className="flex gap-2 p-3 bg-muted">
           {product.galleryImages.slice(0, 2).map((img, idx) => (
@@ -149,7 +150,6 @@ export default function CollectionPage() {
   const params = useParams()
   const collectionId = params.id as string
 
-  // Map collection IDs to product collection field names
   const collectionMap: Record<string, string> = {
     ete: 'été',
     hiver: 'hiver',
